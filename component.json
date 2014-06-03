@@ -1,0 +1,20 @@
+{
+  "name": "isarraylike",
+  "description": "Check if value is an array-like object.",
+  "version": "0.0.1",
+  "keywords": [
+    "is",
+    "array",
+    "like"
+  ],
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "development": {
+    "dependencies": {
+      "visionmedia/mocha": "*",
+      "component/assert": "*"
+    }
+  }
+}
