@@ -1,5 +1,5 @@
-module.exports = function (value, checkMethods) {
+module.exports = function (value, complex) {
 	return value && typeof value === 'object'
 		&& typeof value.length === 'number'
-		&& (!checkMethods || typeof value.splice === 'function');
+		&& (!complex || typeof value.splice === 'function');
 };
