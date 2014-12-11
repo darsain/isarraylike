@@ -16,6 +16,9 @@ describe('isArrayLike', function () {
 		assert(isArrayLike(arguments), '`arguments` is a simple ALO');
 		assert(isArrayLike({ length: 0 }), '`{ length: 0 }` is a simple ALO');
 	});
+	it('should fail on invalid array like objects', function () {
+		assert(!isArrayLike({ length: 0.1 }), 'length of 0.1 is not valid');
+	});
 	it('should recognize only complex array like objects when requested', function () {
 		assert(isArrayLike([], true), '[] is a complex ALO');
 		assert(!isArrayLike(arguments, true), '`arguments` is not a complex ALO');
